@@ -1,0 +1,293 @@
+@import url("./movil.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 10px;
+}
+
+header, nav, article, section, footer {
+  padding: 0 30px;
+}
+
+header {
+  background: #09092b;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.formBus {
+  display: flex;
+  flex-wrap: nowrap;
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  padding-right: 3px;
+}
+.formBus select {
+  background: #5C627E;
+  border-radius: 15px;
+  width: 120px;
+  padding-left: 5%;
+  color: #fff;
+}
+.formBus .textBus {
+  outline-style: none;
+  border-style: none;
+  padding: 0 5px;
+  color: #5C627E;
+}
+.formBus img {
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.registroUsuario {
+  list-style: none;
+  display: flex;
+}
+.registroUsuario li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+}
+.registroUsuario hr {
+  margin: 0 8px;
+  color: #10C6FF;
+}
+
+nav {
+  background: #475F67;
+  font-size: 12px;
+  margin-top: 3px;
+  height: 24px;
+  box-shadow: 0 2px 15px #09092b;
+  position: relative;
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style: none;
+  padding: 6px 0;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+article {
+  background: URL("../imagen/audifonoFondo.png");
+  background-size: 550px 450px;
+  background-repeat: no-repeat;
+  background-position: 90% 0px;
+  position: relative;
+  z-index: 100;
+  height: 450px;
+}
+article .contenido {
+  color: #5e5d5d;
+  padding: 12% 0;
+  width: 60%;
+}
+article .contenido h1 {
+  font-size: 50px;
+}
+article .contenido p {
+  padding: 8px 0;
+}
+article .contenido button {
+  width: 150px;
+  margin: 10px 20px 0 0;
+  padding: 7px 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+article .contenido #inforBtn {
+  background: #FF1097;
+  color: #fff;
+  border: 2px solid #FF1097;
+  border-radius: 15px;
+}
+article .contenido #masBtn {
+  background: none;
+  border: 2px solid #FF1097;
+  border-radius: 15px;
+  color: #FF1097;
+}
+
+section {
+  background: #10C6FF;
+}
+section .seccionImag {
+  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section .seccionImag img {
+  width: 70px;
+}
+
+#article2 {
+  background: #fff;
+  height: 100%;
+}
+#article2 .selloDisc, #article2 .estudios {
+  padding: 35px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#article2 .selloDisc img, #article2 .estudios img {
+  width: 260px;
+  height: 230px;
+}
+#article2 .selloDisc .contDisc, #article2 .estudios .contDisc {
+  width: 260px;
+  padding: 10px 0;
+  justify-content: space-between;
+  color: #5e5d5d;
+  align-self: center;
+}
+#article2 .selloDisc .contDisc h2, #article2 .estudios .contDisc h2 {
+  font-size: 19px;
+  padding-bottom: 8px;
+}
+#article2 .selloDisc .contDisc p, #article2 .estudios .contDisc p {
+  font-size: 14px;
+}
+#article2 .selloDisc img, #article2 .selloDisc .contDisc, #article2 .estudios img, #article2 .estudios .contDisc {
+  margin: 0 3%;
+}
+
+footer {
+  background: #475F67;
+}
+footer .logoFinal {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+footer .logoFinal img {
+  width: 150px;
+}
+footer .listas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .listas .vinculos {
+  border-left: 2px solid #fff;
+  padding-left: 7px;
+  align-self: center;
+}
+footer .listas .vinculos ul li {
+  list-style: none;
+  font-size: 15px;
+  margin: 5px 0;
+}
+footer .listas .vinculos ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .listas .suscriptor {
+  text-align: center;
+}
+footer .listas .suscriptor form label {
+  color: #fff;
+  font-size: 20px;
+}
+footer .listas .suscriptor form button, footer .listas .suscriptor form input {
+  width: 100%;
+}
+footer .listas .suscriptor form input {
+  background: none;
+  color: #fff;
+  outline-style: none;
+  border-style: none;
+  border-bottom: 2px solid #fff;
+  margin: 8px 0;
+}
+footer .listas .suscriptor form ::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 11px;
+  padding-left: 10px;
+}
+footer .listas .suscriptor form button {
+  padding: 3px 0;
+  border: 2px solid #fff;
+  background: #FF1097;
+  color: #fff;
+  border-radius: 15px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+footer .listas .suscriptor form p {
+  font-size: 11px;
+}
+footer .listas .suscriptor form p a {
+  color: #fff;
+}
+footer .autor {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 745px) {
+  body {
+    padding: 0px;
+  }
+
+  header, nav, article, section, footer {
+    padding: 0 20px;
+  }
+
+  header {
+    justify-content: center;
+  }
+  header .formBus {
+    display: none;
+  }
+  header .registroUsuario {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  article .contenido {
+    width: 100%;
+  }
+  article .contenido button {
+    width: 100%;
+  }
+
+  #article2 .estudios {
+    flex-wrap: wrap-reverse;
+  }
+
+  footer .listas {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .listas gnf .vinculos {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
